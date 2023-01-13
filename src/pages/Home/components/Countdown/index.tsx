@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 import { CountdownContainer, Separator } from './style'
 
 export function Countdown() {
-  const [amountSecondsPassed, setAmaountSecondsPassed] = useState(0)
-
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
 
   useEffect(() => {
